@@ -1,6 +1,5 @@
 const jwt = require("jsonwebtoken");
 const joi = require('joi');
-const Joi = require("joi");
 
 module.exports = ((req, res, next) => {
     const { email, password } = req.body;
