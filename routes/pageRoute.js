@@ -5,7 +5,7 @@ const tokenVerify = require('../middlewares/tokenHandler');
 const router = express.Router();
 
 // localhost:5000/brands
-router.route('/brands').get(tokenVerify,pageController.getAllBrands);
+router.route('/brands').get(pageController.getAllBrands);
 
 // localhost:5000/categories
 router.route('/categories').get(tokenVerify,pageController.getAllCategories);
