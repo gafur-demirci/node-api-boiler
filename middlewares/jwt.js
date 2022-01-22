@@ -9,5 +9,3 @@ function Jwt() {
 };
 
 module.exports = Jwt;
-
-/* app.use(jwt({ secret: 'shhhhhhared-secret', algorithms: ['HS256']}).unless({path: ['/token']})); */

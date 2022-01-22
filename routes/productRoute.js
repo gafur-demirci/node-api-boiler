@@ -1,6 +1,5 @@
 const express = require('express');
 const pageController = require('../controllers/pageController');
-// const tokenVerify = require('../middlewares/tokenHandler');
 
 const router = express.Router();
 
@@ -15,6 +14,5 @@ router.route('/categories').get(pageController.getAllCategories);
 
 // localhost:5000/api/product/category:id
 router.route('/category/:id').get(pageController.getCategoryById);
-
 
 module.exports = router;

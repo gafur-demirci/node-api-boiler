@@ -1,7 +1,5 @@
 const express = require('express');
 const userController = require('../controllers/userController');
-// const getToken = require('../middlewares/jwtToken');
-// const tokenVerify = require('../middlewares/tokenHandler');
 
 const router = express.Router();
 

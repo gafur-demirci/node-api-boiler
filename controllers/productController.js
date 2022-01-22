@@ -12,9 +12,7 @@ exports.getAllBrands = async (req,res) => {
 
 exports.getBrandById = async (req,res) => {
     console.log('getCategoryById');
-    // console.log(`gelen id ${req.params.id}`);
     const catId = req.body.id;
-    // const catId = req.params.id;
     console.log(catId);
     const categoriyAttr = await category.fetchCategoryAttr(catId);
     res.status(200).send({
@@ -34,9 +32,7 @@ exports.getAllCategories = async (req,res) => {
 
 exports.getCategoryById = async (req,res) => {
     console.log('getCategoryById');
-    // console.log(`gelen id ${req.params.id}`);
     const catId = req.body.id;
-    // const catId = req.params.id;
     console.log(catId);
     const categoriyAttr = await category.fetchCategoryAttr(catId);
     res.status(200).send({
@@ -44,4 +40,3 @@ exports.getCategoryById = async (req,res) => {
         data: categoriyAttr
     });
 };
-
